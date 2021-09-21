@@ -9,6 +9,6 @@ wget -O $WORKING_DIR/data/map.txt https://datadryad.org/stash/downloads/file_str
 wget -O $WORKING_DIR/data/pheno.csv https://datadryad.org/stash/downloads/file_stream/4340
 
 # Download GEMMA
-wget https://github.com/genetics-statistics/GEMMA/releases/download/v0.98.4/gemma-0.98.4-linux-static-AMD64.gz -P $WORKING_DIR/
-gunzip -f $WORKING_DIR/gemma-0.98.4-linux-static-AMD64.gz
-chmod u+x $WORKING_DIR/gemma-0.98.4-linux-static-AMD64
+wget https://github.com/genetics-statistics/GEMMA/releases/download/v0.98.4/gemma-0.98.4-linux-static-AMD64.gz -P $WORKING_DIR/gemma/
+gunzip -f $WORKING_DIR/gemma/gemma-0.98.4-linux-static-AMD64.gz
+chmod u+x $WORKING_DIR/gemma/gemma-0.98.4-linux-static-AMD64
