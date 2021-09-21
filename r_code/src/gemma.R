@@ -141,6 +141,11 @@ run.gemma <- function (phenotype, covariates, pheno, geno, map,
     # markers *not* on the chromosome.
     cat(" * Computing p-values for ",length(markers),
         " markers on chromosome ",chr,".\n",sep="")
+
+    cat(paste(gemma.exe,"-g geno.txt -a map.txt -p pheno.txt",
+                 "-c covariates.txt -k kinship.txt -notsnp -lmm 2",
+                 "-lmin 0.01 -lmax 100", sep=" "))
+    cat("\n")
     system(paste(gemma.exe,"-g geno.txt -a map.txt -p pheno.txt",
                  "-c covariates.txt -k kinship.txt -notsnp -lmm 2",
                  "-lmin 0.01 -lmax 100"),
@@ -204,7 +209,6 @@ run.gemma.norr <- function (phenotype, covariates, pheno, geno, map,
   # Set the local directory to the location of the GEMMA files.
   srcdir <- getwd()
   setwd(gemmadir)
-
   # Now we are finally ready to run GEMMA for all markers.
   cat("Computing p-values for",nrow(map),"candidate markers.\n")
   system(paste(gemma.exe,"-g geno.txt -a map.txt -p pheno.txt",
