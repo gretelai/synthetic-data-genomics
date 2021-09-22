@@ -142,10 +142,6 @@ run.gemma <- function (phenotype, covariates, pheno, geno, map,
     cat(" * Computing p-values for ",length(markers),
         " markers on chromosome ",chr,".\n",sep="")
 
-    cat(paste(gemma.exe,"-g geno.txt -a map.txt -p pheno.txt",
-                 "-c covariates.txt -k kinship.txt -notsnp -lmm 2",
-                 "-lmin 0.01 -lmax 100", sep=" "))
-    cat("\n")
     system(paste(gemma.exe,"-g geno.txt -a map.txt -p pheno.txt",
                  "-c covariates.txt -k kinship.txt -notsnp -lmm 2",
                  "-lmin 0.01 -lmax 100"),
