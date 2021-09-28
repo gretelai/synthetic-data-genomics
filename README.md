@@ -20,7 +20,7 @@ conda install r-core r-recommended r-irkernel jupyter
 See `EXPERIMENTS.md`.
 
 ## Synthesize genome and phenome data
-To be added.
+1. Run `synthetics/01_create_phenome_training_data.ipynb` to create genome training set and filter irrelevant fields.
 
 ## Run experiments and compare results
 To be added.
