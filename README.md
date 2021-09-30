@@ -20,7 +20,11 @@ conda install r-core r-recommended r-irkernel jupyter
 See `EXPERIMENTS.md`.
 
 ## Synthesize genome and phenome data
-1. Run `synthetics/01_create_phenome_training_data.ipynb` to create genome training set and filter irrelevant fields.
+1. `synthetics/01_create_phenome_training_data.ipynb` creates the genome training set and filter irrelevant fields.
+2. `synthetics/02_create_synthetic_mouse_phenomes.ipynb` trains a synthetic model on the mouse phenome set.
+3. `synthetics/03_phenome_stats.ipynb` calculates statistics on phenotype SNP associations.
+4. `synthetics/04_build_genome_training_set.ipynb` creates a genome dataset based on abBMD SNPs 
+5. `synthetics/05_create_synthetic_mouse_genomes.ipynb` trains a synthetic model on the mouse genome set.
 
 ## Run experiments and compare results
 To be added.
