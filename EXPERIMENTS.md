@@ -1,11 +1,39 @@
-### Recreate the initial experiments
+# Recreate the initial experiments
 First, we will recreate the experiments from "Genome-wide association study of behavioral, physiological and gene expression traits in outbred CFW mice". The comand below will download the datasets used in the mouse genome paper into a local directory called `mouse_data_set` for processing.
 
+## Download the original experiment datasets
 ```
 sh download.sh
 ```
 
-Next, open `./research_paper_code/notebooks/map.ipynb` in a Jupyter notebook, and choose Kernel->Run All. This will run through the R-studio code in this repository that recreates the results from the original paper. Note that even on a fast computer, this code may take up to 3 days to run. As data is generated, you will see plots and data files generated in the following formats:
+## Set up a Jupyter notebook with the R Kernel
+Next, use the Conda package manager to set up a virtual environment to run the Jupyter notebooks that recreate the original experiments on the datasets.
+
+```
+conda create -n r-kernel
+conda install r-recommended r-irkernel
+conda install jupyter
+```
+
+Add the R-kernel spec to Jupyter and install required packages.
+```
+R -e 'IRkernel::installspec()'
+R -e 'install.packages("qtl", repos = "http://cran.us.r-project.org")'
+R -e 'install.packages("qqman", repos = "http://cran.us.r-project.org")'
+R -e 'install.packages("data.table", repos = "http://cran.us.r-project.org")'
+R -e 'install.packages("stringr", repos = "http://cran.us.r-project.org")'
+R -e 'install.packages("qqman", repos = "http://cran.us.r-project.org")'
+R -e 'install.packages("devtools", repos = "http://cran.us.r-project.org")'
+```
+
+Run Jupyter notebook
+
+```
+jupyter notebook
+```
+
+## Run Map.ipynb
+Next, open `./research_paper_code/notebooks/map.ipynb` in Jupyter notebook, and choose Kernel->Run All. This will run through the R-studio code in this repository that recreates the results from the original paper. Note that even on a fast computer, this code may take up to 3 days to run. As data is generated, you will see plots and data files generated in the following formats:
 
 ```
 (base) redlined@redlined-980:~/GitHub/synthetic-data-genomics/mice_data_set/out$ head lm_plantaris_1_79646.csv
