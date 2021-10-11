@@ -13,7 +13,7 @@ Install the Conda package manager:
 ```
 conda create --name genomics python=3.9
 conda activate genomics
-conda install r-core r-recommended r-irkernel jupyter
+conda install jupyter
 ```
 
 ## Recreate the original paper experiments
