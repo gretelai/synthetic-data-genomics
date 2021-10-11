@@ -49,6 +49,8 @@ Next, open `./research_paper_code/notebooks/map.ipynb` in Jupyter notebook, and 
 "9","rs243591869",13,7296440,1.89613649778877e-05
 ```
 
-<img width="937" alt="Screen Shot 2021-09-21 at 3 11 11 PM" src="https://user-images.githubusercontent.com/6510818/134256551-933caf10-4b7e-4228-a32a-4cd75953985a.png">
+![image](https://user-images.githubusercontent.com/6510818/136842534-32ed43ac-e80f-47b2-9788-2f5f7149d257.png)
+
+
 
 
