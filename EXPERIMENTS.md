@@ -35,20 +35,20 @@ jupyter notebook
 ```
 
 ## Run Map.ipynb
-Next, open `./research_paper_code/notebooks/map.ipynb` in Jupyter notebook, and choose Kernel->Run All. This will run through the R-studio code in this repository that recreates the results from the original paper. As data is generated, you will see plots and data files generated in the following formats:
+Running this notebook before synthesizing data is optional as the original `abBMD` analysis was downloaded in the steps above. Map.ipynb can be run to optinally recreate the original experiment results. To run the notebook, open `./research_paper_code/notebooks/map.ipynb` in Jupyter notebook, and choose Kernel->Run All. This will run through the R-studio code in this repository that recreates the results from the original paper. As data is generated, you will see plots and data files generated in the following formats:
 
 ```
-(base) redlined@redlined-980:~/GitHub/synthetic-data-genomics/mice_data_set/out$ head lm_plantaris_1_79646.csv
+(base) redlined@redlined-980:~/GitHub/synthetic-data-genomics/mice_data_set/out$ head lm_abBMD_1_79646.csv
 "","snp","chr","pos","p"
-"1","rs46110548",13,8871303,9.60141540760935e-06
-"2","rs216161522",13,9038407,1.04292648303643e-05
-"3","rs48201941",13,5974272,1.06707961350016e-05
-"4","rs231489766",13,8988261,1.131883198666e-05
-"5","rs259152022",13,9038004,1.19756669281965e-05
-"6","rs48351148",13,8940993,1.26057184411879e-05
-"7","rs250637251",15,101019128,1.35049345326697e-05
-"8","rs222853368",13,6648524,1.86357665221831e-05
-"9","rs243591869",13,7296440,1.89613649778877e-05
+"1","rs29477109",11,95292217,5.05231663641996e-14
+"2","rs27071351",11,96114911,7.07418067212828e-14
+"3","rs27024162",11,96918116,7.17058199722633e-14
+"4","rs49423067",11,96918212,7.19866140655625e-14
+"5","rs29470802",11,95263588,8.04984862217419e-14
+"6","rs29459746",11,95987376,1.03725122425739e-13
+"7","rs50417410",11,97011284,1.04333530152468e-13
+"8","rs29473466",11,96920033,1.33866242959213e-13
+"9","rs221074340",11,96018255,1.35574083178291e-13
 ```
 
 ![image](https://user-images.githubusercontent.com/6510818/136842534-32ed43ac-e80f-47b2-9788-2f5f7149d257.png)
