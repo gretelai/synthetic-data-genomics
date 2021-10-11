@@ -17,9 +17,10 @@ conda install r-core r-recommended r-irkernel jupyter
 ```
 
 ## Recreate the original paper experiments
-See `EXPERIMENTS.md`.
+Follow the steps in `EXPERIMENTS.md` to download the experiment datasets and recreate the results from the paper.
 
 ## Synthesize genome and phenome data
+Next, create synthetic versions of the mouse phenome and genome datasets from the original experiments.
 1. `synthetics/01_create_phenome_training_data.ipynb` creates the genome training set and filter irrelevant fields.
 2. `synthetics/02_create_synthetic_mouse_phenomes.ipynb` trains a synthetic model on the mouse phenome set.
 3. `synthetics/03_phenome_stats.ipynb` calculates statistics on phenotype SNP associations.
