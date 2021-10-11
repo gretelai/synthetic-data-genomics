@@ -1,7 +1,9 @@
 # Recreate the initial experiments
-First, we will recreate the experiments from "Genome-wide association study of behavioral, physiological and gene expression traits in outbred CFW mice". The comand below will download the datasets used in the mouse genome paper into a local directory called `mouse_data_set` for processing.
+We will recreate the experiments from "Genome-wide association study of behavioral, physiological and gene expression traits in outbred CFW mice". The command below will download the datasets used in the mouse genome paper into a local directory called `mice_data_set` for processing.
 
 ## Download the original experiment datasets
+The shell script below downloads the original experiment datasets and results for the `abBMD` analysis.
+
 ```
 sh download.sh
 ```
@@ -33,7 +35,7 @@ jupyter notebook
 ```
 
 ## Run Map.ipynb
-Next, open `./research_paper_code/notebooks/map.ipynb` in Jupyter notebook, and choose Kernel->Run All. This will run through the R-studio code in this repository that recreates the results from the original paper. Note that even on a fast computer, this code may take up to 3 days to run. As data is generated, you will see plots and data files generated in the following formats:
+Next, open `./research_paper_code/notebooks/map.ipynb` in Jupyter notebook, and choose Kernel->Run All. This will run through the R-studio code in this repository that recreates the results from the original paper. As data is generated, you will see plots and data files generated in the following formats:
 
 ```
 (base) redlined@redlined-980:~/GitHub/synthetic-data-genomics/mice_data_set/out$ head lm_plantaris_1_79646.csv
