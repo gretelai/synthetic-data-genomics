@@ -8,6 +8,10 @@ gunzip -f $WORKING_DIR/data/geno.txt.gz
 wget -O $WORKING_DIR/data/map.txt https://datadryad.org/stash/downloads/file_stream/4342
 wget -O $WORKING_DIR/data/pheno.csv https://datadryad.org/stash/downloads/file_stream/4340
 
+# Download experiment results
+wget -c https://gretel-public-website.s3.amazonaws.com/synthetics/genomics-experiment-output.tar.gz -O - | tar -xz
+rm -f genomics-experiment-output.tar.gz
+
 # Download GEMMA
 wget https://github.com/genetics-statistics/GEMMA/releases/download/v0.98.4/gemma-0.98.4-linux-static-AMD64.gz -P $WORKING_DIR/gemma/
 gunzip -f $WORKING_DIR/gemma/gemma-0.98.4-linux-static-AMD64.gz
