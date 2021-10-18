@@ -1,13 +1,6 @@
 # Recreate the initial experiments
 We will recreate the experiments from "Genome-wide association study of behavioral, physiological and gene expression traits in outbred CFW mice". The command below will download the datasets used in the mouse genome paper into a local directory called `mice_data_set` for processing.
 
-## Download the original experiment datasets
-The shell script below downloads the original experiment datasets and results for the `abBMD` analysis.
-
-```
-sh download.sh
-```
-
 ## Set up a Jupyter notebook with the R Kernel
 Next, use the Conda package manager to set up a virtual environment to run the Jupyter notebooks that recreate the original experiments on the datasets.
 
@@ -16,6 +9,7 @@ conda create -n r-kernel
 conda install r-recommended r-irkernel
 conda install jupyter
 ```
+
 
 Add the R-kernel spec to Jupyter and install required packages.
 ```
