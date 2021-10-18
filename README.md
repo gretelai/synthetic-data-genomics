@@ -16,8 +16,15 @@ conda activate genomics
 conda install jupyter
 ```
 
+## Download the original experiment datasets
+The shell script below downloads the original experiment datasets and results for the `abBMD` analysis.
+
+```
+sh download.sh
+```
+
 ## Recreate the original paper experiments
-Follow the steps in `EXPERIMENTS.md` to download the experiment datasets and recreate the results from the paper.
+(Optional) Follow the steps in `EXPERIMENTS.md` to recreate the results from the paper.
 
 ## Synthesize genome and phenome data
 Next, create synthetic versions of the mouse phenome and genome datasets from the original experiments.
