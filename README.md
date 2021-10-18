@@ -1,5 +1,6 @@
 # Synthetic Data Genomics
-We will create synthetic versions of both the mouse genotype and connected phenotype datasets and prove their utility by replicating the results from this paper: https://doi.org/10.1038/ng.3609. 
+We will create synthetic versions of both the mouse genotype and connected phenotype datasets and prove their utility by replicating the results from the paper: Genome-wide association study of behavioral, physiological and gene expression traits in outbred CFW mice by Parker, et al.
+
 
 ## Installation
 
@@ -35,4 +36,7 @@ Next, create synthetic versions of the mouse phenome and genome datasets from th
 
 ## Run experiments and compare results
 To be added.
+
+## Citations
+Parker, C., Gopalakrishnan, S., Carbonetto, P. et al. Genome-wide association study of behavioral, physiological and gene expression traits in outbred CFW mice. Nat Genet 48, 919–926 (2016). https://doi.org/10.1038/ng.3609
 
