@@ -6,6 +6,7 @@ Next, use the Conda package manager to set up a virtual environment to run the J
 
 ```
 conda create -n r-kernel
+conda activate r-kernel
 conda install r-recommended r-irkernel
 conda install jupyter
 ```
