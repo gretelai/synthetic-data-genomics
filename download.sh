@@ -2,7 +2,7 @@
 WORKING_DIR=mice_data_set
 
 # Download experiment datasets
-mkdir -p $WORKING_DIR/data $WORKING_DIR/out $WORKING_DIR/gemma/output
+mkdir -p $WORKING_DIR/data $WORKING_DIR/out $WORKING_DIR/out_synth_lowassoc $WORKINF_DIR/out_synth_highassoc $WORKING_DIR/gemma/output
 wget -O $WORKING_DIR/data/geno.txt.gz https://datadryad.org/stash/downloads/file_stream/4344
 gunzip -f $WORKING_DIR/data/geno.txt.gz
 wget -O $WORKING_DIR/data/map.txt https://datadryad.org/stash/downloads/file_stream/4342
