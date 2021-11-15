@@ -26,6 +26,8 @@ Next, create synthetic versions of the mouse phenome and genome datasets from th
 3. `synthetics/03_build_genome_training_set.ipynb` creates a genome dataset based on abBMD SNPs 
 4. `synthetics/Optional_tune_synthetic_training_params` optionally use Optuna to tune synthetic training paramters.
 5. `synthetics/04_create_synthetic_mouse_genomes.ipynb` trains a synthetic model on the mouse genome set, runs GWAS analysis and compares to original results
+6. `research_paper_code/notebooks/05_compare_associations.ipynb` compute precision, recall and F1 scores for the final synthetic data
+7. `research_paper_code/notebooks/Manhattan plot.ipynb` compute Manhattan plots for both the original and synthetic genome/phenome gwas p-values
 
 
 
