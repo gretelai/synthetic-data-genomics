@@ -1,6 +1,8 @@
 # Synthetic Data Genomics
 The code in this repository uses Gretel.ai's synthetic data APIs to create synthetic (artificial) versions of real world mouse genotype and connected phenotype datasets. We then measure the accuracy of our synthetic data by replicating the results of a Genome Wide Association Study (GWAS) on the real world genotypes and phenotypes for 1,220 mice from this paper: https://doi.org/10.1038/ng.3609. 
 
+View the full case study here: https://cdn.gretel.ai/case_studies/gretel_illumina_case_study.pdf
+
 ## Installation
 
 Requirements:
@@ -17,6 +19,8 @@ conda create --name genomics python=3.9
 conda activate genomics
 conda install jupyter
 ```
+
+Note that 
 
 ## Recreate the original paper experiments
 Follow the steps in `EXPERIMENTS.md` to download the experiment datasets and recreate the results from the paper using real world data.
