@@ -2,7 +2,7 @@
 WORKING_DIR=mice_data_set
 
 # Download experiment datasets
-mkdir -p $WORKING_DIR/data $WORKING_DIR/out  $WORKING_DIR/data $WORKING_DIR/out_synth $WORKING_DIR/gemma/output
+mkdir -p $WORKING_DIR/data $WORKING_DIR/out  $WORKING_DIR/data $WORKING_DIR/out_synth $WORKING_DIR/out_synth_working $WORKING_DIR/out_synth/manh_plots $WORKING_DIR/gemma/output
 mkdir -p $WORKING_DIR/data/genome_training_data
 mkdir -p $WORKING_DIR/data/genome_map_data
 mkdir -p $WORKING_DIR/data/synthetic_genome_data

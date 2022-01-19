@@ -31,6 +31,7 @@ Next, create synthetic versions of the mouse phenome and genome datasets from th
 2. `synthetics/02_create_synthetic_mouse_phenomes.ipynb` trains a synthetic model on the mouse phenome set.
 3. `synthetics/03_build_genome_training_set.ipynb` creates a genome dataset based on abBMD SNPs 
 4. `synthetics/04_create_synthetic_mouse_genomes.ipynb` trains a synthetic model on the mouse genome set, runs GWAS analysis and compares to original results
+5. `research_paper_code/notebooks/map_synth.ipynb` run GWAS on your final genomic results
 
 ## Additional resources
 * `research_paper_code/notebooks/05_compare_associations.ipynb` compute precision, recall and F1 scores for the final synthetic data
